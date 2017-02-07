@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+archiveBaseName = "ping-pong"
+version = '1.0'
+mainClassName ='app'
+
+repositories {
+	mavenCentral()
+}
+
+
+dependancies {
+	testCompile group: 'junit', name: 'junit', version: '4.+'
+}
